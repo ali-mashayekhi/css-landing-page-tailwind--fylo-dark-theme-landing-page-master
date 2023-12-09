@@ -2,10 +2,26 @@
   "name": "css-landing-page-tailwind--fylo-dark-theme-landing-page-master",
   "version": "1.0.0",
   "description": "![Design preview for the Fylo dark theme landing page challenge](./design/desktop-preview.jpg)",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "index.js",
+  "directories": {
+    "test": "test"
   },
-  "author": "Ali Mashayekhi",
-  "license": "ISC"
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/style.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ali-mashayekhi/css-landing-page-tailwind--fylo-dark-theme-landing-page-master.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ali-mashayekhi/css-landing-page-tailwind--fylo-dark-theme-landing-page-master/issues"
+  },
+  "homepage": "https://github.com/ali-mashayekhi/css-landing-page-tailwind--fylo-dark-theme-landing-page-master#readme",
+  "devDependencies": {
+    "npx-run": "^2.1.2",
+    "tailwindcss": "^3.3.6"
+  }
 }

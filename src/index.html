@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <script defer src="./script.js"></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <title>
+      Frontend Mentor | Fylo landing page with dark theme and features grid
+    </title>
+  </head>
+  <body class="font-body text-white-custom">
+    <header class="bg-darkBlue-bg-intro text-white py-7 font-header sm:py-12">
+      <div class="px-5 flex justify-between items-center sm:px-14">
+        <div><img class="h-7 sm:h-10" src="../images/logo.svg" alt="" /></div>
+        <nav class="text-sm sm:basis-4/12">
+          <ul class="list-none flex gap-5 sm:gap-0 sm:justify-end">
+            <li class="sm:basis-1/4 sm:text-right">
+              <a class="hover:font-bold hover:underline" href="#">Features</a>
+            </li>
+            <li class="sm:basis-1/4 sm:text-right">
+              <a class="hover:font-bold hover:underline" href="#">Team</a>
+            </li>
+            <li class="sm:basis-1/4 sm:text-right">
+              <a class="hover:font-bold hover:underline" href="#">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="intro-bg pt-10 sm:pt-8 sm:pb-18">
+      <div
+        class="max-w-lg mx-auto px-7 flex flex-col items-center sm:max-w-xl sm:px-0"
+      >
+        <img class="shrink-0" src="../images/illustration-intro.png" alt="" />
+
+        <h1
+          class="text-center mt-9 text-2xl font-bold font-header leading-9 sm:text-3xl sm:mt-7 sm:leading-relaxed sm:tracking-wide"
+        >
+          All your files in one secure location, accessible anywhere.
+        </h1>
+      </div>
+
+      <div
+        class="max-w-lg mx-auto px-9 flex flex-col items-center pb-20 sm:max-w-xl"
+      >
+        <p class="text-center text-sm mb-6 pt-6 leading-6 sm:text-base">
+          Fylo stores all your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends
+          family, and co-workers.
+        </p>
+        <a
+          href="#"
+          class="inline-block bg-blue-custom hover:bg-cyan-custom text-sm font-header font-bold px-20 py-3 rounded-full sm:px-18 transition-all duration-300"
+        >
+          Get Started
+        </a>
+      </div>
+    </section>
+
+    <section class="bg-darkBlue-bg-main pt-28 pb-16 sm:pt-0 sm:pb-18">
+      <div
+        class="grid grid-cols-1 mx-auto sm:grid-cols-2 max-w-[50rem] sm:gap-x-8"
+      >
+        <div class="flex flex-col items-center px-7 mb-20">
+          <img
+            class="mb-7 sm:h-16"
+            src="../images/icon-access-anywhere.svg"
+            alt="A computer"
+          />
+          <h3
+            class="text-lg font-header font-bold text-center mb-3 sm:text-base"
+          >
+            Access your files, anywhere
+          </h3>
+          <p
+            class="text-sm text-center leading-6 sm:text-xs sm:leading-4 sm:pr-6"
+          >
+            The ability to use a smartphone, tablet, or computer to access your
+            account means your files follow you everywhere.
+          </p>
+        </div>
+        <div class="flex flex-col items-center px-7 mb-16">
+          <img
+            class="mb-7 sm:h-16"
+            src="../images/icon-security.svg"
+            alt="A computer"
+          />
+          <h3
+            class="text-lg font-header font-bold text-center mb-3 sm:text-base"
+          >
+            Security you can trust
+          </h3>
+          <p class="text-sm text-center leading-6 sm:text-xs sm:leading-4">
+            2-factor authentication and user-controlled encryption are just a
+            couple of the security features we allow to help secure your files.
+          </p>
+        </div>
+        <div class="flex flex-col items-center px-7 mb-16">
+          <img
+            class="mb-7 sm:h-16"
+            src="../images/icon-collaboration.svg"
+            alt="A computer"
+          />
+          <h3
+            class="text-lg font-header font-bold text-center mb-3 sm:text-base"
+          >
+            Real-time collaboration
+          </h3>
+          <p
+            class="text-sm text-center leading-6 sm:text-xs sm:leading-4 sm:pr-5"
+          >
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required.
+          </p>
+        </div>
+        <div class="flex flex-col items-center px-7 mb-16">
+          <img
+            class="mb-7 sm:h-16"
+            src="../images/icon-any-file.svg"
+            alt="A computer"
+          />
+          <h3
+            class="text-lg font-header font-bold text-center mb-3 sm:text-base"
+          >
+            Store any type of file
+          </h3>
+          <p class="text-sm text-center leading-6 sm:text-xs sm:leading-4">
+            Whether you're sharing holidays photos or work documents, Fylo has
+            you covered allowing for all file types to be securely stored and
+            shared.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 bg-darkBlue-bg-main sm:py-0 sm:pb-18">
+      <div
+        class="grid grid-cols-1 px-7 sm:grid-cols-[repeat(23,1fr)] max-w-[71rem] sm:mx-auto sm:px-10 sm:items-center sm:gap-x-12"
+      >
+        <img
+          src="../images/illustration-stay-productive.png"
+          alt="illustration of ttree people holding boards"
+          class="mb-9 sm:col-span-12"
+        />
+        <div class="grid grid-cols-1 sm:col-span-11">
+          <h2
+            class="font-header text-lg font-bold mb-4 sm:text-3xl sm:mb-3 sm:leading-10 sm:pr-28"
+          >
+            Stay productive, wherever you are
+          </h2>
+          <p
+            class="mb-4 text-sm leading-6 sm:text-xs sm:leading-5 sm:mb-3 sm:pr-16"
+          >
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs.
+          </p>
+          <p class="mb-4 text-sm leading-6 sm:text-xs sm:leading-5 sm:mb-3">
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required.
+          </p>
+          <a
+            class="group flex text-sm items-center text-cyan-custom border-b-1 border-b-cyan-custom hover:text-white-custom hover:border-b-white-custom justify-self-start pb-1.5 sm:text-xs"
+            href="#"
+            >See how Fylo works
+            <span class="ml-1">
+              <img
+                class="group-hover:hidden"
+                src="../images/icon-arrow.svg"
+                alt=""
+              />
+              <img
+                class="hidden group-hover:block"
+                src="../images/icon-arrow-white.svg"
+                alt=""
+              />
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 bg-darkBlue-bg-main sm:pb-18 sm:py-0">
+      <div
+        class="px-10 grid grid-cols-1 mx-auto max-w-[70rem] sm:grid-cols-3 sm:gap-x-10 sm:px-20 relative"
+      >
+        <div
+          class="absolute left-10 translate-x-1 -translate-y-5 z-10 sm:-top-1.5 sm:left-18"
+        >
+          <img
+            src="../images/bg-quotes.png"
+            alt="quotes icon"
+            class="w-7 sm:w-10"
+          />
+        </div>
+
+        <div
+          class="bg-darkBlue-bg-testimonials shadow-custom shadow-darkBlue-custom px-5 py-7 mb-7 rounded-sm z-20 sm:mb-0 sm:px-7"
+        >
+          <blockquote class="text-2xs mb-4 leading-5">
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </blockquote>
+          <div class="flex items-center gap-2">
+            <img
+              class="w-7 rounded-full"
+              src="../images/profile-1.jpg"
+              alt="Satish Patel picture"
+            />
+            <div>
+              <p class="text-2xs font-bold leading-5">Satish Patel</p>
+              <p class="text-[8px]">Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-darkBlue-bg-testimonials shadow-custom shadow-darkBlue-custom px-5 py-7 mb-7 rounded-sm relative sm:mb-0 sm:px-7"
+        >
+          <blockquote class="text-2xs mb-5 leading-5">
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </blockquote>
+          <div class="flex items-center gap-2">
+            <img
+              class="w-7 rounded-full"
+              src="../images/profile-2.jpg"
+              alt="Satish Patel picture"
+            />
+            <div>
+              <p class="text-2xs font-bold leading-5">Bruce McKenzie</p>
+              <p class="text-[8px]">Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-darkBlue-bg-testimonials shadow-custom shadow-darkBlue-custom px-5 py-7 rounded-sm sm:mb-0 sm:px-7"
+        >
+          <blockquote class="text-2xs mb-5 leading-5">
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </blockquote>
+          <div class="flex items-center gap-2">
+            <img
+              class="w-7 rounded-full"
+              src="../images/profile-3.jpg"
+              alt="Satish Patel picture"
+            />
+            <div>
+              <p class="text-2xs font-bold leading-5">Iva Boyd</p>
+              <p class="text-[8px]">Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-bg px-6 py-16 sm:pb-18 sm:pt-18">
+      <div
+        class="bg-darkBlue-bg-intro shadow-lg shadow-black-transparent max-w-[44rem] mx-auto rounded-md sm:pt-1"
+      >
+        <div class="px-6 py-10 sm:px-14">
+          <h2
+            class="font-header text-center text-lg mb-4 font-bold sm:text-2xl"
+          >
+            Get early access today
+          </h2>
+          <p class="text-center text-sm mb-7 leading-6 sm:text-xs sm:px-4">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+          <form class="grid grid-cols-1 sm:grid-cols-3 sm:gap-x-6">
+            <input
+              type="text"
+              placeholder="email@example.com"
+              class="placeholder:text-xs text-gray-900 rounded-full py-2 px-7 mb-5 sm:col-span-2 sm:mb-0"
+            />
+            <button
+              class="rounded-full py-2 bg-blue-custom hover:bg-cyan-custom text-sm font-bold sm:col-span-1 sm:text-xs"
+            >
+              Get Started For Free
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-darkBlue-bg-footer py-16 sm:py-0 sm:pb-18">
+      <div class="max-w-[71rem] mx-auto">
+        <div class="mb-10 px-11 sm:px-10">
+          <img src="../images/logo.svg" alt="" />
+        </div>
+        <div
+          class="grid grid-cols-1 gap-y-12 px-6 sm:gap-x-10 sm:grid-cols-footer items-start sm:px-10"
+        >
+          <div
+            class="grid grid-cols-1 gap-y-4 sm:grid-cols-5 sm:grid-rows-2 sm:gap-x-18"
+          >
+            <div
+              class="flex gap-x-4 sm:col-span-3 items-start sm:row-span-2 sm:gap-x-5"
+            >
+              <img
+                class="pt-1 w-3 sm:col-start-1 self-start"
+                src="../images/icon-location.svg"
+                alt=""
+              />
+              <span class="text-sm sm:col-start-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </span>
+            </div>
+            <div
+              class="flex gap-x-4 sm:col-start-4 items-center sm:col-span-2 sm:gap-x-5"
+            >
+              <img
+                class="w-4 sm:col-start-3"
+                src="../images/icon-phone.svg"
+                alt=""
+              />
+              <a
+                href="tel:+15431235467"
+                class="text-xs sm:col-start-4 hover:font-bold"
+              >
+                +1-543-123-4567
+              </a>
+            </div>
+            <div
+              class="flex gap-x-4 sm:col-start-4 items-center sm:col-span-2 sm:gap-x-5"
+            >
+              <img
+                class="w-4 sm:col-start-3 pt-1"
+                src="../images/icon-email.svg"
+                alt=""
+              />
+              <a
+                href="mailto:example@fylo.com"
+                class="text-xs sm:col-start-4 hover:font-bold"
+              >
+                example@fylo.com
+              </a>
+            </div>
+          </div>
+          <ul class="text-sm flex flex-col gap-3">
+            <li><a class="hover:font-bold" href="#">About Us</a></li>
+            <li><a class="hover:font-bold" href="#">Jobs</a></li>
+            <li><a class="hover:font-bold" href="#">Press</a></li>
+            <li><a class="hover:font-bold" href="#">Blog</a></li>
+          </ul>
+          <ul class="text-sm flex flex-col gap-3">
+            <li><a class="hover:font-bold" href="#">Contact Us</a></li>
+            <li><a class="hover:font-bold" href="#">Terms</a></li>
+            <li><a class="hover:font-bold" href="#">Privacy</a></li>
+          </ul>
+          <ul
+            class="flex gap-6 justify-center content-center items-center sm:gap-3 sm:justify-end"
+          >
+            <li>
+              <a
+                href="#"
+                class="group border-white-custom hover:border-cyan-custom border-1 rounded-full p-1.5 block sm:p-[0.3125rem]"
+              >
+                <svg
+                  class="w-3 h-3 fill-white-custom group-hover:fill-cyan-custom"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.403,9H14V7c0-1.032,0.084-1.682,1.563-1.682h0.868c0.552,0,1-0.448,1-1V3.064c0-0.523-0.401-0.97-0.923-1.005 C15.904,2.018,15.299,1.999,14.693,2C11.98,2,10,3.657,10,6.699V9H8c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1l2-0.001V21 c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1v-8.003l2.174-0.001c0.508,0,0.935-0.381,0.993-0.886l0.229-1.996 C17.465,9.521,17.001,9,16.403,9z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="group border-white-custom hover:border-cyan-custom border-1 rounded-full p-1.5 block sm:p-[0.3125rem]"
+                href="#"
+              >
+                <svg
+                  class="w-3 h-3 fill-white-custom group-hover:fill-cyan-custom"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 30 30"
+                >
+                  <path
+                    d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="group border-white-custom hover:border-cyan-custom border-1 rounded-full p-1.5 block sm:p-[0.3125rem]"
+                href="#"
+              >
+                <svg
+                  class="w-3 h-3 fill-white-custom group-hover:fill-cyan-custom"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
