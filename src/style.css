@@ -37,4 +37,8 @@
       background-size: contain;
     }
   }
+
+  .error-invisible {
+    visibility: hidden;
+  }
 }

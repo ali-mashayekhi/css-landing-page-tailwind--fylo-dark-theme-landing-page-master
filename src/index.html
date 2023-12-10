@@ -272,7 +272,7 @@
       <div
         class="bg-darkBlue-bg-intro shadow-lg shadow-black-transparent max-w-[44rem] mx-auto rounded-md sm:pt-1"
       >
-        <div class="px-6 py-10 sm:px-14">
+        <div class="px-6 py-10 sm:px-14 sm:py-0 sm:pt-10 sm:pb-4">
           <h2
             class="font-header text-center text-lg mb-4 font-bold sm:text-2xl"
           >
@@ -283,14 +283,23 @@
             extremely generous. If you have any questions, our support team
             would be happy to help you.
           </p>
-          <form class="grid grid-cols-1 sm:grid-cols-3 sm:gap-x-6">
-            <input
-              type="text"
-              placeholder="email@example.com"
-              class="placeholder:text-xs text-gray-900 rounded-full py-2 px-7 mb-5 sm:col-span-2 sm:mb-0"
-            />
+          <form
+            class="grid grid-cols-1 sm:grid-cols-3 sm:gap-x-6 cta-form items-start"
+          >
+            <div class="mb-5 sm:mb-0 sm:col-span-2">
+              <input
+                type="text"
+                placeholder="email@example.com"
+                class="placeholder:text-xs text-gray-900 rounded-full py-2 px-7 cta-input w-full mb-2"
+              />
+              <p
+                class="text-[0.625rem] text-red-custom px-7 error-message error-invisible"
+              >
+                Please enter a valid email address
+              </p>
+            </div>
             <button
-              class="rounded-full py-2 bg-blue-custom hover:bg-cyan-custom text-sm font-bold sm:col-span-1 sm:text-xs"
+              class="rounded-full py-3 bg-blue-custom hover:bg-cyan-custom text-sm font-bold sm:col-span-1 sm:text-xs transition-all duration-300"
             >
               Get Started For Free
             </button>
