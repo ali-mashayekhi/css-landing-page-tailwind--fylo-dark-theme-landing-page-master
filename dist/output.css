@@ -1034,6 +1034,10 @@ video {
   transition-duration: 300ms;
 }
 
+.duration-1000{
+  transition-duration: 1000ms;
+}
+
 .cta-bg {
   background: linear-gradient(
       to bottom,
@@ -1045,7 +1049,7 @@ video {
 }
 
 .intro-bg {
-  background: url(../images/bg-curvy-mobile.svg),
+  background: url(./images/bg-curvy-mobile.svg),
       linear-gradient(
         to bottom,
         hsl(217, 28%, 15%) 0%,
@@ -1059,7 +1063,7 @@ video {
 
 @media (min-width: 40em) {
   .intro-bg {
-    background: url(../images/bg-curvy-desktop.svg), hsl(217, 28%, 15%);
+    background: url(./images/bg-curvy-desktop.svg), hsl(217, 28%, 15%);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
