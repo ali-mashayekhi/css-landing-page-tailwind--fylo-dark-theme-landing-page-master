@@ -7,7 +7,6 @@
     "test": "test"
   },
   "scripts": {
-    "start": "vite",
     "build:css": "tailwindcss -i ./src/style.css -o ./dist/output.css --watch"
   },
   "repository": {
