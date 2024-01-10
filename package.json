@@ -22,6 +22,8 @@
   "homepage": "https://github.com/ali-mashayekhi/css-landing-page-tailwind--fylo-dark-theme-landing-page-master#readme",
   "devDependencies": {
     "npx-run": "^2.1.2",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.3.6"
   }
 }
