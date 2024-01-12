@@ -39,6 +39,7 @@ module.exports = {
         "4-auto": "auto 1fr auto 1fr",
         footer: "6fr 1fr 1fr 1fr",
         "2-custom": "fit-content(38.5rem) 1fr",
+        "2-custom-new": "615fr 561fr",
         16: "repeat(16,1fr)",
         36: "repeat(36,1fr)",
       },
